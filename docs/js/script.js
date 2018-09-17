@@ -34,17 +34,17 @@ $(document).ready(function() {
             });
         } else {
             $(".navbar").css({
-                'margin-top': '-100px',
-                'opacity': '0'
+                'margin-top': '0px',
+                'opacity': '1'
             })
             $(".navbar-nav>li>a").css({
-                'padding-top': '45px'
+                'padding-top': '15px'
             });
             $(".navbar-brand img").css({
-                'height': '45px'
+                'height': '35px'
             });
             $(".navbar-brand img").css({
-                'padding-top': '20px'
+                'padding-top': '0px'
             });
             $(".navbar-default").css({
                 'background-color': 'rgba(59, 59, 59, 0)'
