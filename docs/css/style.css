@@ -339,7 +339,7 @@ tuor:visited {
 }
 .oferta_items {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
 }
 .oferta_area>.section_title {
     margin-bottom: 30px;
