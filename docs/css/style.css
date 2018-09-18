@@ -37,6 +37,9 @@ URL: http://designscrazed.org/
     margin: 0;
     padding: 0;
 }
+html{
+    overflow-x: hidden;
+}
 body {
     font-family: 'Raleway', sans-serif;
     overflow-y: scroll;
