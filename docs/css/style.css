@@ -141,6 +141,9 @@ p {
     .navbar-nav>li>a {
         padding-top: 45px;
     }
+    .kontakt h2 {
+        font-size: 80px;
+    }
 }
 @media (max-width: 768px) {
     .navbar-brand img {} .navbar-default {
@@ -172,6 +175,9 @@ p {
 }
 .home-iphone img{
     width: 100%;
+}
+.kontakt h2 {
+    font-size: 20px;
 }
 
 @media (max-width: 768px){
@@ -288,7 +294,7 @@ tuor:visited {
     margin-top: 40px;
     display: inline-block;
 }
-.inner_about_desc {} .single_about_area {
+.inner_about_desc  .single_about_area {
     position: relative;
     padding-bottom: 4px;
     padding-left: 80px;
@@ -319,6 +325,10 @@ tuor:visited {
 }
 .single_about_area:hover div i {
     color: #0080FF;
+}
+.single_about_area_icon .pe-7s-leaf {
+    position: absolute;
+    left: 12px;
 }
 #phtrow {
     top: -40px;
@@ -358,6 +368,7 @@ tuor:visited {
     justify-self: center;
     align-self: center;
     text-align: center;
+    margin: 15px;
 }
 .fas {
     color: #0080FF;
@@ -367,6 +378,17 @@ tuor:visited {
 .oferta_text {
     font-size: 35px;
     font-weight: bold;
+}
+@media (max-width: 768px) {
+    .oferta_elem {
+        border-bottom: 10px solid;
+        border-image: linear-gradient(90deg, rgba(0,128,255,1) 0%, rgba(29,253,243,1) 50%, rgba(0,128,255,1) 100%);
+        border-image-slice: 1;
+        border-width: 3px;
+    }
+    .carousel-inner .item {
+        margin: 0 auto;
+    }
 }
 
 /*---------------------------------------
@@ -400,7 +422,12 @@ tuor:visited {
 }
   
   .popup-box h2 {
+    font-size: 45px;
     color: #1a1a1a;
+    border-bottom: 10px solid;
+    border-image: linear-gradient(90deg, rgba(0,128,255,1) 0%, rgba(29,253,243,1) 50%, rgba(0,128,255,1) 100%);
+    border-image-slice: 1;
+    border-width: 3px;
   }
   
  .popup-box h3 {
@@ -561,121 +588,6 @@ div.carousel-inner .item img {
     font-weight: bold;
 }
 
-/*---------------------------------------
-   SECTION FEATURES              
------------------------------------------*/
-.features {
-    background-color: #f1f1f1
-}
-.feature_inner {
-    padding-top: 30px;
-    padding-bottom: 70px;
-}
-.feature_iphone {} .feature_iphone img {
-    width: 100%;
-    margin-top: 35px;
-}
-.right_single_feature {
-    position: relative;
-    padding-left: 90px;
-    margin-bottom: 30px;
-    margin-top: 35px;
-}
-.right_single_feature div {
-    position: absolute;
-    font-size: 40px;
-    color: #0080FF;
-    left: 0;
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    top: -8px;
-}
-.right_single_feature h3 {
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: 700;
-    margin-bottom: 14px;
-    color: #333333;
-}
-.right_single_feature h3 span {
-    color: #0080FF;
-}
-.right_single_feature p {
-    color: #333;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 25px;
-}
-
-/*left feature*/
-
-.left_single_feature {
-    position: relative;
-    padding-right: 90px;
-    margin-bottom: 65px;
-    text-align: right;
-    margin-top: 35px;
-}
-.left_single_feature div {
-    position: absolute;
-    font-size: 40px;
-    color: #0080FF;
-    right: 0;
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    top: -8px;
-}
-.left_single_feature h3 {
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 21px;
-    color: #333333;
-}
-.left_single_feature h4 {
-    text-transform: uppercase;
-    font-size: 15px;
-    text-align: right;
-    color: #333333;
-    cursor: pointer;
-}
-.h4hov {
-    color: #0080FF;
-}
-.left_single_feature h3 span {
-    color: #0080FF;
-}
-.left_single_feature p {
-    color: #333;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 25px;
-}
-
-.right_no_padding {
-    padding-left: 15px;
-}
-.left_no_padding {
-    padding-right: 15px;
-}
-@media (min-width: 991px) and (max-width: 1200px) {
-    .right_single_feature {
-        margin-left: -60px;
-    }
-    .left_single_feature {
-        margin-right: -60px;
-    }
-    .feature_iphone {
-        margin-top: 35px;
-    }
-    .right_single_feature h3,
-    .left_single_feature h3 {
-        margin-top: 0px;
-        margin-bottom: 15px;
-    }
-}
 /*---------------------------------------
    SECTION CENNIK
 -----------------------------------------*/
@@ -1125,7 +1037,6 @@ div.carousel-inner .item img {
 }
 .kontakt h2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 55px;
 }
 .kontakt i {
     color: #0080FF;
