@@ -88,12 +88,13 @@
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your customer chat code -->
-<div class="fb-customerchat" attribution=setup_tool page_id="828345283913181">
+<div class="fb-customerchat" attribution=setup_tool page_id="828345283913181" theme_color="#0080ff" logged_in_greeting="Cześć! Napisz do mnie, razem zmienimy Twoje życie na lepsze!"
+    logged_out_greeting="Cześć! Napisz do mnie, razem zmienimy Twoje życie na lepsze!">
 </div>
  <!-- END PRELOADER -->
 
