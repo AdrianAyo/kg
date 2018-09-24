@@ -61,6 +61,40 @@
         </div>
     </div>
 
+    <!--FACEBOOK SDK-->
+
+     <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1932675123702977',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v3.1'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="828345283913181">
+</div>
  <!-- END PRELOADER -->
 
  <!-- =========================
@@ -104,14 +138,14 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-8">
                         <div class="home_text">
-                            <!-- TITLE AND DESC -->
-                          <p id="trnr">TRENER PERSONALNY</p>  
-                            <h1 id="knrd">KONRAD <b>GOŁĄB</b></h1>
+                            <!-- TITLE AND DESC --> 
+                            <h1 id="knrd">TRENER <b>GOŁĄB</b></h1>
+                            <p id="trnr">ZMIEŃ SYLWETKĘ</br>Z TRENEREM OSOBISTYM</p>
                         
 
                             <div class="download-btn">
                             <!-- BUTTON -->
-                                <a class="btn home-btn wow fadeInLeft" href="#FEATURES">OFERTA</a>
+                                <a class="btn home-btn wow fadeInLeft" href="#CONTACT">SKONTAKTUJ SIĘ</a>
                                 <a class="tuor btn wow fadeInRight" href="#ABOUT">POZNAJ MNIE <i class="fa fa-angle-down"></i></a>
                             </div>
                         </div>
@@ -125,18 +159,6 @@
             </div>
         </div>
     </section>
-
-    <!-- END HEADER SECTION -->
-
-
-
-
- <!-- =========================
-     START ABOUT US SECTION
-============================== -->
-
-
-    <section class="about page" id="ABOUT">
         <!-- POPUP WINDOWS-->
         <div class="popup-wrap">
             <div class="popup-box">
@@ -145,7 +167,7 @@
                 <h3>Trener Personalny Roku by Men's Health</h3>
                 <h3>Kuń</h3>
                 <h3>Pochodzi z osady dzikich barbażyńców, na zachodzie Wrocławia</h3>
-                <a class="close-btn popup-close">x</a>
+                <a class="close-btn popup-close">X</a>
             </div>
         </div>
         
@@ -166,16 +188,27 @@
                     <i class="fas fa-leaf"></i>
                     <p class="oferta_text">ZDROWE</br>ODŻYWIANIE</p>
                 </div>
-                <div class="oferta_elem">
+              <!--  <div class="oferta_elem">
                     <i class="fas fa-capsules"></i>
                     <p class="oferta_text"></br>SUPLEMENTACJA</p>
-                </div>
+                </div>-->
                 <div class="oferta_elem">
                     <i class="fas fa-thumbs-up"></i>
                     <p class="oferta_text"></br>MOTYWACJA</p>
                 </div>
             </div>
         </div>
+    <!-- END HEADER SECTION -->
+
+
+
+
+ <!-- =========================
+     START ABOUT US SECTION
+============================== -->
+
+
+    <section class="about page" id="ABOUT">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -540,7 +573,7 @@
                                 <div class="generic_price_tag clearfix">
                                     <span class="price">
                                         <span class="currency">199</span>
-                                        <span class="month">PLN/MIESIĄC</span>
+                                        <span class="month">PLN/MSC</span>
                                     </span>
                                 </div>
                                 <!--//PRICE END-->
@@ -596,7 +629,7 @@
                                 <div class="generic_price_tag clearfix">
                                     <span class="price">
                                         <span class="currency">520</span>
-                                        <span class="month">PLN/MIESIĄC</span>
+                                        <span class="month">PLN/MSC</span>
                                     </span>
                                 </div>
                                 <!--//PRICE END-->
@@ -646,7 +679,7 @@
                                 <div class="generic_price_tag clearfix">
                                     <span class="price">
                                         <span class="currency">919</span>
-                                        <span class="month">PLN/MIESIĄC</span>
+                                        <span class="month">PLN/MSC</span>
                                     </span>
                                 </div>
                                 <!--//PRICE END-->
@@ -692,7 +725,7 @@
                                 <div class="generic_price_tag clearfix">
                                     <span class="price">
                                         <span class="currency">1199</span>
-                                        <span class="month">PLN/MIESIĄC</span>
+                                        <span class="month">PLN/MSC</span>
                                     </span>
                                 </div>
                                 <!--//PRICE END-->
@@ -887,22 +920,16 @@
         <div class ="description">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <h3><span id="map1" class="pe-7s-map-marker"></span>Robotnicza 46A</h3>
                         <p>Kameralna siłownia bez tłumów ludzi, dla osób które cenią sobie prywatność. Mamy możliwość dostępu siłowni tylko na wyłączność (trenujemy 1 na 1!).</p>
-                        <img src="http://www.treningipersonalnek2.pl/wp-content/uploads/2016/01/12346415_744268892372324_3255964679119185678_n.jpg" width="100%" height="260px">
+                        <img src="http://www.treningipersonalnek2.pl/wp-content/uploads/2016/01/12346415_744268892372324_3255964679119185678_n.jpg" width="100%" height="auto">
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <h3><span id="map2" class="pe-7s-map-marker"></span>McFit Legnicka</h3>
                         <p>Ogromna przestrzeń do wykorzystania w treningu. Dwa poziomy maszyn, przyrządów i sal do ćwiczeń.</p>
-                        <img id="m2" src="https://lh3.googleusercontent.com/-dVm6-wb-Cfc/VzrkybknqVI/AAAAAAAAABs/fvLXizI0w1074vt4HmdcX1_TYTWLXWRiwCLQB/DSC_2013.jpg" width="100%" height="260px">
-                    </div>
-
-                    <div class="col-md-4">
-                        <h3><span id="map3" class="pe-7s-map-marker"></span>McFit Kazimierza Wielkiego</h3>
-                        <p>Siłownia w samym centrum miasta. Nowoczesny sprzęt i domowa atmosfera.</p>
-                        <img id="m3" src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/16299311_1774134252912888_9079596858529221886_n.jpg?oh=ef95f963bec52d22f176f810e47a4da7&oe=5A8D8B71" width="100%" height="260px">
+                        <img id="m2" src="https://lh3.googleusercontent.com/-dVm6-wb-Cfc/VzrkybknqVI/AAAAAAAAABs/fvLXizI0w1074vt4HmdcX1_TYTWLXWRiwCLQB/DSC_2013.jpg" width="100%" height="auto">
                     </div>
         </div>
                 </div>
@@ -920,51 +947,14 @@
             </div>
         </div>
 
-        <div class="available_store">
+        <div class="available_store parallax">
             <div class="container  wow bounceInRight" data-wow-duration="1s">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="available_title">
-                        <h2>Available on</h2>
-                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <h2>Nie odkładaj tego na później.</h2>
+                        <p>Teraz jest najlepszy czas. Zmień swoje ciało i przywróć zdrowie!</p>
                     </div>
                 </div>
-
-                <!-- DOWNLOADABLE STORE -->
-                <div class="col-md-6">
-                    <div class="row">
-                        <a href="">
-                            <div class="col-md-4 no_padding">
-                                <div class="single_store">
-                                    <i class="fa fa-apple"></i>
-                                    <div class="store_inner">
-                                        <h2>iOS</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="col-md-4 no_padding">
-                            <a href="">
-                                <div class="single_store">
-                                    <i class="fa fa-android"></i>
-                                    <div class="store_inner">
-                                        <h2>ANDROID</h2>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 no_padding">
-                            <a href="">
-                                <div class="single_store last">
-                                    <i class="fa fa-windows"></i>
-                                    <div class="store_inner">
-                                        <h2>WINDOWS</h2>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- END DOWNLOADABLE STORE -->
             </div>
         </div>
     </section>
@@ -987,27 +977,31 @@
             <div class="contact_form wow bounceIn">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 wow bounceInLeft">
+                        <div class="col-md-6 wow bounceInLeft">
                             <div class="kontakt">
                                 <h2><i class="fa fa-mobile"></i> 606  889  848</h2>
                                 <h2><i class="fa fa-envelope"></i> KG.TRENER@GMAIL.COM</h2>
                             </div>
                         </div>
+                        <div class="col-md-6 wow bounceInRight">
+                            <div class="kontakt2">
+                                
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        
 
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 wow bounceInLeft">
                         <div class="social_icons">
                             <ul>
-                                <li><a href="https://www.facebook.com/treningiwroclaw/"><i class="fa fa-facebook"></i></a>
+                                <li><a href="https://www.facebook.com/treningiwroclaw/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 </li>
-                                <li><a href="https://www.instagram.com/gouuombek/"><i class="fa fa-instagram"></i></a>
-                                </li>
-                                <li><a href=""><i class="fa fa-youtube-play"></i></a>
-                                </li>
+                                <li><a href="https://www.instagram.com/trener_golab/" target="_blank"><i class="fab fa-instagram"></i></a>
                             </ul>
                         </div>
                     </div>
@@ -1077,7 +1071,7 @@
                     <div class="copy_right_text">
                     <!-- COPYRIGHT TEXT -->
                         <p>Copyright &copy; 2017. All Rights Reserved.</p>        
-                        <p>A theme by <a href="https://dcrazed.com/">Dcrazed</a></p>
+                        <p>TRENER GOŁĄB</p>
                     </div>
                      
                 </div>
@@ -1096,7 +1090,6 @@
 <!-- =========================
      SCRIPTS 
 ============================== -->
-
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

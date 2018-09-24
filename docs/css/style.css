@@ -42,7 +42,6 @@ html{
 }
 body {
     font-family: 'Raleway', sans-serif;
-    overflow-y: scroll;
     overflow-x: hidden;
 }
 p {
@@ -98,7 +97,8 @@ p {
     margin: 0px;
 }
 .navbar {
-    margin-top: -30px
+    margin-top: -30px;
+    border: none;
 }
 .navbar-brand {
     padding: 9px 15px;
@@ -143,6 +143,10 @@ p {
     }
     .kontakt h2 {
         font-size: 80px;
+    }
+    .kontakt2 {
+        width: 100%;
+        height: auto;
     }
 }
 @media (max-width: 768px) {
@@ -921,26 +925,26 @@ div.carousel-inner .item img {
     color: #00ff0a;
     font-weight: bold;
 }
-#m2, #m3 {
-    margin-top: 20px;
-}
 .description img {
     margin-bottom: 40px;
 }
 .available_store {
-    background: #1a1a1a;
+    background: url(../images/zdj7.jpg) no-repeat center;
     margin-top: -8px;
     position: relative;
+    text-align: center;
 }
 .available_title {
     padding-top: 75px;
+    padding-bottom: 75px;
 }
 .available_title h2 {
-    color: #fff;
-    font-size: 30px;
+    color: #0077ff;
+    font-size: 60px;
 }
 .available_title p {
-    color: #B5B5B5;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
 }
 .single_store {
     text-align: center;
