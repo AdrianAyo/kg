@@ -235,11 +235,25 @@ $(document).ready(function() {
     "use strict";
     
     $("#owl-demo").owlCarousel({
-        autoPlay: 3000,
-        items: 4, //10 items above 1000px browser width
-        itemsDesktop: [1370, 3], //5 items between 1000px and 901px
-        itemsDesktopSmall: [900, 2], // betweem 900px and 601px
-        itemsTablet: [600, 1], //2 items between 600 and 0
+        center: true,
+        loop: true,
+        items: 4,
+        autoWidth: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 4,
+                nav: true,
+            }
+        }
     });
 });
 

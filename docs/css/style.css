@@ -357,13 +357,13 @@ tuor:visited {
 -----------------------------------------*/
 
 .oferta_area {
-    background: #E6E6E6;
+    background: linear-gradient(0deg, rgba(215,215,215,0.1516981792717087) 0%, rgba(255,255,255,1) 50%, rgba(215,215,215,0.15449929971988796) 100%);
     padding-bottom: 100px;
     padding-top: 0px;
 }
 .oferta_items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .oferta_area>.section_title {
     margin-bottom: 30px;
@@ -373,6 +373,7 @@ tuor:visited {
     align-self: center;
     text-align: center;
     margin: 15px;
+
 }
 .fas {
     color: #0080FF;
@@ -499,11 +500,11 @@ tuor:visited {
    SECTION TESTIMONIAL              
 -----------------------------------------*/
 
-#owl-demo .item {
+/*#owl-demo .item {
     margin-left: 90px;
     margin-right: 90px;
     margin-bottom: 50px;
-}
+}*/
 #owl-demo .item img {
     display: block;
     width: 100%;
@@ -623,7 +624,7 @@ div.carousel-inner .item img {
     text-transform: uppercase;
     text-align: center;
     position: relative;
-    color: #ffffff;
+    color: #000000;
     font-size: 30px;
     font-weight: 400;
 }
@@ -675,7 +676,7 @@ div.carousel-inner .item img {
 }
 /*left cennik*/
 .cennik {
-    background-color:#1a1a1a;
+    background-color:#ffffff;
 }
 .feature_inner {
     padding-top: 30px;
