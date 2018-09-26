@@ -85,8 +85,9 @@ $(document).ready(function () {
         $("#owl-demo1").owlCarousel({
             center: true,
             loop: true,
+            stagePadding: 50,
             items: 1,
-            margin: 15,
+            margin: 5,
         });
 
         $("#owl-demo2").owlCarousel({
