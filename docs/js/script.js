@@ -77,9 +77,9 @@ $(document).ready(function () {
             $(".owl_wrapper").addClass("owl-carousel owl-theme");
             $(".owl_wrapper2").addClass("owl-carousel owl-theme");
             $(".pricing_item").addClass("item");
-            alert("mniejsze");
+            alert("mniejsze1");
         } else {
-            alert("winksze");
+            alert("winksze2");
         }
 
         $("#owl-demo1").owlCarousel({
