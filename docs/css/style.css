@@ -510,6 +510,11 @@ tuor:visited {
     width: 100%;
     height: auto;
 }
+#owl-demo1 .pricing_item {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .testimonial {
     background: url(../images/testimonial.jpg);
     background-size: cover;

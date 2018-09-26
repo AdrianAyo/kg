@@ -69,7 +69,35 @@ $(document).ready(function () {
         e.preventDefault();
     });
 });
+ // IF ON MOBILE, ADD OWL CAROUSEL TO PRICING
+    $(document).ready(function() {
+        if ($(window).width() < 768) {
+            $(".owl_wrapper").attr("id", "owl-demo1");
+            $(".owl_wrapper2").attr("id", "owl-demo2");
+            $(".owl_wrapper").addClass("owl-carousel owl-theme");
+            $(".owl_wrapper2").addClass("owl-carousel owl-theme");
+            $(".pricing_item").addClass("item");
+            alert("mniejsze");
+        } else {
+            alert("winksze");
+        }
 
+        $("#owl-demo1").owlCarousel({
+            center: true,
+            loop: true,
+            items: 1,
+            margin: 15,
+        });
+
+        $("#owl-demo2").owlCarousel({
+            center: true,
+            loop: true,
+            items: 1,
+            autoWidth: true,
+            margin: 10,
+        });
+
+    });
 
  // MENU SECTION ACTIVE
 $(document).ready(function() {
@@ -143,7 +171,7 @@ $(document).ready(function() {
     "use strict";
     
     $(window).scroll(function() {
-
+        
         "use strict";
         
         $(".page").each(function() {
@@ -239,7 +267,7 @@ $(document).ready(function() {
         loop: true,
         items: 4,
         autoWidth: true,
-        margin: 10,
+        margin: 15,
         responsive: {
             0: {
                 items: 1,
