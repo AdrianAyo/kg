@@ -803,7 +803,27 @@ div.carousel-inner .item img {
     font-weight: 300;
     line-height: 25px;
 }
-
+/*--------------------------------------
+    SECTION BLOG
+----------------------------------------*/
+    .blog {
+        width: 100%;
+        height: auto;
+        background: #333333;
+    }
+    .latest_posts {
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .post {
+        width: 400px;
+        height: 400px;
+    }
+    .separator img {
+        max-width:400px;
+        height: auto;
+    }
 /*---------------------------------------
    SECTION CALL TO ACTION              
 -----------------------------------------*/
@@ -1094,8 +1114,19 @@ div.carousel-inner .item img {
 .kontakt_item:hover {
     background: rgba(0, 128, 255,0.1);
 }
-.kontakt_item:hover i{
-    color: #0080FF;
+#kontakt_item1:hover i{
+    color: rgb(0, 192, 118);
+}
+#kontakt_item2:hover i{
+    color: #fd5949;
+}
+#kontakt_item3:hover i{
+    color: rgb(59,89,152);
+}
+#kontakt_item4:hover i{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .kontakt h2{
     font-family: Arial, Helvetica, sans-serif;

@@ -101,6 +101,32 @@ $(document).ready(function () {
         });
 
     });
+ // GET RESPONSE FROM BLOG API
+
+$(document).ready(function () {
+
+    $.ajax({
+      url:
+        "https://www.googleapis.com/blogger/v3/blogs/3440830275070420877/posts?orderBy=published&key=AIzaSyDIpdXyu4KHiHKl1ys5Bq5yWPmL91TU0nQ",
+      type: "GET",
+      dataType: "json",
+      success: function(res) {
+        $("#post_title1").append(res.items[0].title);
+        $("#post_title2").append(res.items[1].title);
+        $("#post_title3").append(res.items[2].title);
+         
+        $("#post_time1").append(res.items[0].updated);
+        $("#post_time2").append(res.items[1].updated);
+        $("#post_time3").append(res.items[2].updated);
+
+        $(".post_content1").append(res.items[0].content);
+        $(".post_content2").append(res.items[1].content);
+        $(".post_content3").append(res.items[2].content);
+      }
+    });
+
+})
+
 
  // MENU SECTION ACTIVE
 $(document).ready(function() {
