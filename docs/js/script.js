@@ -71,30 +71,32 @@ $(document).ready(function () {
 });
  // IF ON MOBILE, ADD OWL CAROUSEL TO PRICING
     $(document).ready(function() {
-        if ($(window).width() < 768) {
-            $(".owl_wrapper").attr("id", "owl-demo1");
-            $(".owl_wrapper2").attr("id", "owl-demo2");
-            $(".owl_wrapper").addClass("owl-carousel owl-theme");
-            $(".owl_wrapper2").addClass("owl-carousel owl-theme");
-            $(".pricing_item").addClass("item");
-            alert("mniejsze1");
-        } else {
-            alert("winksze2");
-        }
+            if ($(window).width() < 768) {
+                $(".owl_wrapper").attr("id", "owl-demo1");
+                $(".owl_wrapper2").attr("id", "owl-demo2");
+                $(".owl_wrapper").addClass("owl-carousel owl-theme");
+                $(".owl_wrapper2").addClass("owl-carousel owl-theme");
+                $(".pricing_item").addClass("item");
+            } else {
+                $(".owl_wrapper").attr("id", "");
+                $(".owl_wrapper2").attr("id", "");
+                $(".owl_wrapper").removeClass("owl-carousel owl-theme");
+                $(".owl_wrapper2").removeClass("owl-carousel owl-theme");
+                $(".pricing_item").removeClass("item");
+
+            }
 
         $("#owl-demo1").owlCarousel({
             center: true,
             loop: true,
-            stagePadding: 50,
             items: 1,
-            margin: 5,
+            margin: 10,
         });
 
         $("#owl-demo2").owlCarousel({
             center: true,
             loop: true,
             items: 1,
-            autoWidth: true,
             margin: 10,
         });
 

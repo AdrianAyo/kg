@@ -153,6 +153,13 @@ p {
     .navbar-brand img {} .navbar-default {
       /*  background-color: #fff !important; */
     }
+    .navbar-default .navbar-collapse {
+        border: none;
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
@@ -511,6 +518,11 @@ tuor:visited {
     height: auto;
 }
 #owl-demo1 .pricing_item {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#owl-demo2 .pricing_item {
     display: block;
     width: 100%;
     height: auto;
@@ -1011,7 +1023,6 @@ div.carousel-inner .item img {
 -----------------------------------------*/
 
 .contact {
-    background: #f1f1f1;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1064,13 +1075,52 @@ div.carousel-inner .item img {
 }
 .kontakt {
     text-align: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    margin-bottom: 40px;
+}
+.kontakt_item {
+    background: rgba(117, 117, 117,0.02);
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    width: 450px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    border: 3px solid rgba(0, 128, 255,0.8);
+}
+.kontakt_item:hover {
+    background: rgba(0, 128, 255,0.1);
+}
+.kontakt_item:hover i{
+    color: #0080FF;
 }
 .kontakt h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 .kontakt i {
-    color: #0080FF;
-    font-size: 70px;
+    color: rgb(117, 117, 117);
+    font-size: 90px;
+    margin: 0 auto;
+}
+.kontakt h1 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+@media screen and (max-width: 768px) {
+    .kontakt {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .kontakt_item {
+        width: 300px;
+    }
+    .kontakt h1 {
+        font-size: 22px;
+    }
 }
 
 .submit-btn,
@@ -1380,6 +1430,17 @@ body{background-color:#eee;}
 }
 .bigger {
     margin-bottom: 80px;
+}
+@media screen and (max-width: 600px) {
+    .smaller {
+        top: 0px;
+    }
+    .bigger {
+        margin-bottom: 0px;
+    }
+    .pricing_item {
+        margin-top: 30px;
+    }
 }
 
 /*PRICE COLOR CODE START*/
